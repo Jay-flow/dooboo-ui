@@ -1,6 +1,7 @@
 {
   "homepage": "https://dooboolab.github.io/dooboo-ui/",
   "private": true,
+  "packageManager": "yarn@3.1.1",
   "scripts": {
     "pre": "lerna run clean && lerna clean --yes && lerna bootstrap && lerna run build",
     "predeploy": "yarn build",

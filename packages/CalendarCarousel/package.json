@@ -29,11 +29,11 @@
     "typescript": "^4.2.4"
   },
   "peerDependencies": {
-    "react": ">=16.9",
-    "react-native": ">=0.58",
     "@dooboo-ui/theme": ">=0.3.3",
+    "@emotion/native": ">=11",
     "@emotion/react": ">=11",
-    "@emotion/native": ">=11"
+    "react": ">=16.9",
+    "react-native": ">=0.58"
   },
   "publishConfig": {
     "access": "public"

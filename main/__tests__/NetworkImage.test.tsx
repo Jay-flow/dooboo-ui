@@ -10,6 +10,15 @@ let component: React.ReactElement;
 
 describe('[NetworkImage] render', () => {
   beforeEach(() => {
+    jest.useFakeTimers();
+  });
+
+  afterEach(() => {
+    jest.runOnlyPendingTimers();
+    jest.useRealTimers();
+  });
+
+  beforeEach(() => {
     props = createTestProps();
 
     component = createComponent(<NetworkImage {...props} />);

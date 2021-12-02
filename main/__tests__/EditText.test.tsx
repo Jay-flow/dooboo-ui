@@ -46,8 +46,6 @@ describe('[EditText]', () => {
 
         const container = testingLib.getByTestId('container-id');
 
-        jest.runAllTimers();
-
         const containerChildViewCustomStyle =
           container.findAllByType(View)[0].instance.props.style[1][1];
 

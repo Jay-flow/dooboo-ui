@@ -81,6 +81,15 @@ function SnackbarDefault(): React.ReactElement {
 }
 
 describe('Snackbar', () => {
+  beforeEach(() => {
+    jest.useFakeTimers('legacy');
+  });
+
+  // afterEach(() => {
+  //   jest.runOnlyPendingTimers();
+  //   jest.useRealTimers();
+  // });
+
   it('should render test component', () => {
     component = createComponent(<SnackbarDefault />);
 
